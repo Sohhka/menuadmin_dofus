@@ -1,9 +1,18 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <menu>
 
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+	
+	
 <item type="static" label="&lt;b&gt;Administration&lt;b&gt;"/>
 
-	<item type="menu" label="&lt;font color='#a9D0F5'&gt;[Ougah] | Commands&lt;/font&gt;">
+	<item type="menu" label="&lt;font color='#a9D0F5'&gt;[ADMIN] | Commands&lt;/font&gt;">
 		<item type="menu" label="&lt;font color='#FFFFFF'&gt;Infos&lt;/font&gt;">
 			<item type="static" label="Infos %p"/>	
 			<item type="sendCommand" label="Informations du compte" command="info char %p"/>
