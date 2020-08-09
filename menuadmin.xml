@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <menu>
 
 		<!-- by Sohhka ! -->
@@ -8,11 +8,11 @@
 		<!-- by Sohhka ! -->
 		<!-- by Sohhka ! -->
 		<!-- by Sohhka ! -->
-	
+		<!-- by Sohhka ! -->
 	
 <item type="static" label="&lt;b&gt;Administration&lt;b&gt;"/>
 
-	<item type="menu" label="&lt;font color='#a9D0F5'&gt;[ADMIN] | Commands&lt;/font&gt;">
+	<item type="menu" label="&lt;font color='#a9D0F5'&gt;[ADMIN SERVER] | Commands&lt;/font&gt;">
 		<item type="menu" label="&lt;font color='#FFFFFF'&gt;Infos&lt;/font&gt;">
 			<item type="static" label="Infos %p"/>	
 			<item type="sendCommand" label="Informations du compte" command="info char %p"/>
@@ -48,9 +48,11 @@
 			<item type="sendCommand" label="Aigle" command="look {705}"/> <!-- Morph basique -->
 			<item type="sendCommand" label="Lion" command="look {1003}"/> <!-- Morph basique -->
 			<item type="sendCommand" label="Ankama" command="look {1150|||160}"/> <!-- Morph basique -->
-			<item type="sendCommand" label="-----Joueurs-----" command="look {271|||200}"/> <!-- Séparation -->
+			<item type="static" label="&lt;b&gt;	Morphs des joueurs	&lt;b&gt;"/>
 			<item type="sendCommand" label="Rope" command="look {1|21,2037,2036,78,1228,1166,1571|1=16565105,2=16244128,3=3924910,4=16777215,5=16777215,7=1,8=16777215|125|1@0={8000||1=3924910,2=16777215,3=3924910,4=16777215,5=3924910|130}}"/> <!-- Morph du joueur "Rope" -->
 			<item type="sendCommand" label="Unknown-Budget" command="look {1|81,2135,2132,2135,4030,4000,3990,7409,1751|1=15244612,2=14793091,3=800835,4=14793091,5=800835,7=1,8=7536748|140|1@0={8000||1=800835,2=14793091,3=800835,4=14793091,5=800835|90}}"/> <!-- Morph du joueur "Unknown-Budget" -->
+			<item type="sendCommand" label="Unknown-Budget | Sram DD" command="look {639|1751|1=800835,2=14793091,3=800835,7=1,8=7536748|120|2@0={2|41,2068,4020,3676,3981,1751|1=15244612,2=14793091,3=800835,4=14793091,5=800835,7=1,8=7536748|155}}"/> <!-- Morph du joueur "Unknown-Budget (Sram)" -->
+			<item type="sendCommand" label="Unknown-Budget| Sram" command="look {1|41,2068,4020,3676,3981,1751|1=15244612,2=14793091,3=800835,4=14793091,5=800835,7=1,8=7536748|155|1@0={2022||1=800835,2=14793091,3=800835,4=14793091,5=800835|90}}"/> <!-- Morph du joueur "Unknown-Budget (Sram sans DD)" -->
 			<item type="sendCommand" label="Fuki" command="look {1|21,2036,4007,3990,4026,1638|1=16765564,2=16511423,3=16349086,4=16046563,5=15573551,7=1,8=676306|125|1@0={8000||1=16349086,2=16046563,3=16349086,4=16046563,5=16349086|85}}"/> <!-- Morph du joueur "Fuki" -->
 			<item type="sendCommand" label="Miso" command="look {1|21,2037,3658,3672,2635,1571|3=53816366,4=74454580,5=91559482,1=16759376,2=16777164,7=0,8=16777215|125|1@0={5111|||65}}"/> <!-- Morph du joueur "Miso" -->
 			<item type="sendCommand" label="Kleese (rouge)" command="look {1|61,2100,2774,335,4000,8517,1571|2=33816576,3=50593792,4=78188801,5=94966017,1=16103775,7=0,8=16777215|150|1@0={5110|||85}}"/> <!-- Morph du joueur "Kleese" -->
@@ -479,11 +481,20 @@
 			<item type="sendCommand" label="Reload mobs" command="reload monsters"/> <!-- Rechargement des monstres (sur la map active) -->
 		</item>
 
-		<item type="menu" label="Add items">
-			<item type="sendCommand" label="Tout les dofus" command="item addtype 23 false"/> <!-- Give de tout les DOFUS -->
+		<item type="menu" label="Add types">
+			<item type="sendCommand" label="Tout les dofus" command="item addtype 23 true"/> <!-- Give de tout les DOFUS -->
+			<item type="sendCommand" label="Parchemins métiers" command="item addtype 13 true"/> 
+			<item type="sendCommand" label="Familiers" command="item addtype 18 true"/> 
+			<item type="sendCommand" label="Clefs spirituelle" command="item addtype 73 true"/> 
+			<item type="sendCommand" label="Parchemins de sorts" command="item addtype 75 true"/> 
+			<item type="sendCommand" label="Boucliers" command="item addtype 82 true"/> 
+			<item type="sendCommand" label="Essences gardiens de donjons" command="item addtype 167 true"/> 
+			<item type="sendCommand" label="Compagnons et artefacts" command="item addtype 169 true"/> 
+			<item type="sendCommand" label="Fragments d'esprits" command="item addtype 175 true"/> 
 		</item>
 
 		<item type="menu" label="Gest. mute">
+			<item type="sendCommand" label="Unmute" command="unmute %p"/> <!-- Unmute -->
 			<item type="sendCommand" label="Mute | 10 min" command="mute %p 10"/> <!-- En minutes -->
 			<item type="sendCommand" label="Mute | 1 heure" command="mute %p 60"/> <!-- En minutes -->
 			<item type="sendCommand" label="Mute | 2 heure" command="mute %p 120"/> <!-- En minutes -->
@@ -492,6 +503,7 @@
 		</item>
 
 		<item type="menu" label="Gest. jail">
+			<item type="sendCommand" label="Unjail" command="unjail %p"/> <!-- Unjail -->
 			<item type="sendCommand" label="Jail | 10 min" command="jail %p 10"/> <!-- En minutes -->
 			<item type="sendCommand" label="Jail | 1 heure" command="jail %p 60"/> <!-- En minutes -->
 			<item type="sendCommand" label="Jail | 2 heure" command="jail %p 120"/> <!-- En minutes -->
@@ -500,6 +512,7 @@
 		</item>
 
 		<item type="menu" label="Gest. ban">
+			<item type="sendCommand" label="Unban" command="unban %p"/> <!-- Unban -->
 			<item type="sendCommand" label="Ban | 10 min" command="ban %p 10"/> <!-- En minutes -->
 			<item type="sendCommand" label="Ban | 1 heure" command="ban %p 60"/> <!-- En minutes -->
 			<item type="sendCommand" label="Ban | 2 heure" command="ban %p 120"/> <!-- En minutes -->
@@ -518,7 +531,14 @@
 	</item>	
 
 	<item type="loadXML" label="&lt;font color='#00ffff'&gt;Reload XML&lt;/font&gt;"/>
-
-	<item type="static" label="&lt;b&gt;by Sohhka&lt;b&gt;"/>
+	
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
+		<!-- by Sohhka ! -->
 
 </menu>
